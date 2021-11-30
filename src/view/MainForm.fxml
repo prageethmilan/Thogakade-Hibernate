@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="403.0" prefWidth="931.0" styleClass="mainform" stylesheets="@styles/MainForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFormController">
+   <children>
+      <ImageView fitHeight="106.0" fitWidth="297.0" layoutX="317.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/FoodCity.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgCustomer" fitHeight="150.0" fitWidth="176.0" layoutX="38.0" layoutY="119.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnteredAnimation" onMouseExited="#playMouseExitedAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/cusstomer.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imgItems" fitHeight="117.0" fitWidth="137.0" layoutX="280.0" layoutY="131.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnteredAnimation" onMouseExited="#playMouseExitedAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/itemList.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imgOrder" fitHeight="117.0" fitWidth="117.0" layoutX="497.0" layoutY="131.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnteredAnimation" onMouseExited="#playMouseExitedAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/order.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imgOrderList" fitHeight="141.0" fitWidth="130.0" layoutX="724.0" layoutY="124.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnteredAnimation" onMouseExited="#playMouseExitedAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/orderList.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="lblDescription" alignment="CENTER" layoutY="332.0" prefHeight="20.0" prefWidth="932.0" text="Please select one of above main operations to proceed">
+         <font>
+            <Font name="Ubuntu Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMenu" alignment="CENTER" layoutX="2.0" layoutY="294.0" prefHeight="26.0" prefWidth="932.0" text="Welcome" textAlignment="CENTER" textFill="#6d0cf5">
+         <font>
+            <Font name="DejaVu Sans Mono Bold" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

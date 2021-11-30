@@ -1,0 +1,22 @@
+.orderForm{
+    -fx-background-color: linear-gradient(to bottom, #151fef, #0071ff, #00a2ff, #00caff, #00eefb);
+}
+
+.cmb{
+    -fx-prompt-text-fill: white;
+    -fx-font-size: 17;
+}
+.txtfield{
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: Black;
+}
+.textLabel{
+    -fx-background-color: transparent;
+    -fx-padding: 0 5px 0px 5px;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}
+.btnAddToCart{
+    -fx-background-color: #4cd137;
+}

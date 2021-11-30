@@ -6,6 +6,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.effect.DropShadow;
 import javafx.scene.image.ImageView;
@@ -70,6 +72,7 @@ public class MainFormController {
                     break;
                 case "imgOrderList":
                     root = null;
+                    new Alert(Alert.AlertType.WARNING,"Under Developing", ButtonType.CLOSE).show();
                     break;
             }
 

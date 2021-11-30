@@ -12,27 +12,27 @@ import java.util.ArrayList;
 public class OrderDAOImpl implements OrderDAO {
     @Override
     public boolean add(Orders order) throws Exception {
-        return false;
+        throw new UnsupportedOperationException("Not Supported Yet");
     }
 
     @Override
     public boolean delete(String s) throws Exception {
-        return false;
+        throw new UnsupportedOperationException("Not Supported Yet");
     }
 
     @Override
     public boolean update(Orders order) throws Exception {
-        return false;
+        throw new UnsupportedOperationException("Not Supported Yet");
     }
 
     @Override
     public Orders search(String s) throws Exception {
-        return null;
+        throw new UnsupportedOperationException("Not Supported Yet");
     }
 
     @Override
     public ArrayList<Orders> getAll() throws Exception {
-        return null;
+        throw new UnsupportedOperationException("Not Supported Yet");
     }
 
     @Override

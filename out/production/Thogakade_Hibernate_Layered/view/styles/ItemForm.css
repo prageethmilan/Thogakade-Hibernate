@@ -1,0 +1,23 @@
+.itemForm{
+    -fx-background-color: linear-gradient(to bottom, #151fef, #0071ff, #00a2ff, #00caff, #00eefb);
+}
+
+.btnAddItem{
+    -fx-border-color: black;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+.btnAddItem:hover{
+    -fx-border-color: black;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-background-color: #81ecec;
+    -fx-cursor: hand;
+}
+.textLabel{
+    -fx-background-color: transparent;
+    -fx-padding: 0 5px 0px 5px;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}

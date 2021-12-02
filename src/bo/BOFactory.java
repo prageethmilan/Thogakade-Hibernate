@@ -2,6 +2,7 @@ package bo;
 
 import bo.custom.impl.CustomerFormBOImpl;
 import bo.custom.impl.ItemFormBOImpl;
+import bo.custom.impl.OrderListFormBOImpl;
 import bo.custom.impl.PlaceOrderFormBOImpl;
 
 public class BOFactory {
@@ -21,12 +22,14 @@ public class BOFactory {
                 return (T) new ItemFormBOImpl();
             case ORDER:
                 return (T) new PlaceOrderFormBOImpl();
+            case ORDERLIST:
+                return (T) new OrderListFormBOImpl();
             default:
                 return null;
         }
 
     }
     public enum BOTypes{
-        CUSTOMER,ITEM,ORDER
+        CUSTOMER,ITEM,ORDER,ORDERLIST
     }
 }

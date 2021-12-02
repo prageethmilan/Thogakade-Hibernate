@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="856.0" prefWidth="844.0" styleClass="OrdersListForm" stylesheets="@styles/OrdersListForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrdersListFormController">
+   <children>
+      <ImageView fitHeight="79.0" fitWidth="66.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#navigateToHomeOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Home.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label alignment="CENTER_RIGHT" layoutX="93.0" layoutY="19.0" prefHeight="55.0" prefWidth="737.0" text="Orders List" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Separator layoutX="191.0" layoutY="73.0" prefHeight="0.0" prefWidth="639.0" />
+      <TableView fx:id="tblOrderList" layoutX="47.0" layoutY="165.0" prefHeight="630.0" prefWidth="755.0">
+        <columns>
+          <TableColumn fx:id="colOrderId" prefWidth="72.0" text="Order ID" />
+          <TableColumn fx:id="colDate" prefWidth="118.0" text="Date" />
+            <TableColumn fx:id="colPrice" prefWidth="89.0" text="Price" />
+            <TableColumn fx:id="colCustomerId" prefWidth="91.0" text="Customer ID" />
+            <TableColumn fx:id="colName" prefWidth="130.0" text="Customer Name" />
+            <TableColumn fx:id="colAddress" prefWidth="129.0" text="Address" />
+            <TableColumn fx:id="colContact" prefWidth="125.0" text="Contact" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
